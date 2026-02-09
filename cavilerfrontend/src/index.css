@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cavalier-bg: #1B2613;
+  --color-cavalier-header-bg: #4B5F33;
+  --color-cavalier-brand: #FFD700;
+  --color-cavalier-text-light: #EDF2F7;
+  --color-cavalier-card-dark: #263219;
+  --color-cavalier-card-light: #5D7245;
+  --color-cavalier-card-red: #8B2424;
+  --color-cavalier-card-orange: #D2691E;
+
+  --color-defence-olive: #556B2F;
+  --color-defence-olive-light: #6B8E23;
+  --color-defence-navy: #1a237e;
+  --color-defence-navy-light: #283593;
+  --color-defence-khaki: #C3B091;
+  --color-defence-khaki-light: #D4C5A9;
+  --color-defence-gold: #FFD700;
+  --color-defence-gold-dark: #B8860B;
+  --color-defence-army: #4B5320;
+  --color-defence-red: #8B0000;
+}
+
+/* Fallback/Explicit classes to guarantee application */
+.bg-cavalier-bg {
+  background-color: #1B2613;
+}
+
+.bg-cavalier-header-bg {
+  background-color: #4B5F33;
+}
+
+.text-cavalier-brand {
+  color: #FFD700;
+}
+
+.text-cavalier-text-light {
+  color: #EDF2F7;
+}
+
+.bg-cavalier-card-dark {
+  background-color: #263219;
+}
+
+body {
+  background-color: #1B2613;
+  color: #ffffff;
+}
