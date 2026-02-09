@@ -5,6 +5,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 
 const sequelize = require('./config/database');
+const User = require('./models/User');
 const authRoutes = require('./routes/auth');
 const errorHandler = require('./middlewares/errorHandler');
 const bannerRoutes = require('./routes/banner');
