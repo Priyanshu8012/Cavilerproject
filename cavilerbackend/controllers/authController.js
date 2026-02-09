@@ -2,6 +2,9 @@
 const { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
+const nodemailer = require('nodemailer');
+const { Op } = require('sequelize');
 const User = require('../models/User');
 
 const generateToken = (userId) => {
