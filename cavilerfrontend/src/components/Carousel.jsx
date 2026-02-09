@@ -30,8 +30,12 @@ const ImageSlider = () => {
     useEffect(() => {
         const fetchBanners = async () => {
             try {
-                const response = await axios.get(`${baseUrl}/banners`);
-                setBanners(response.data);
+                const response = await axios.get(`${baseUrl}/api/banners`);
+                if (Array.isArray(response.data)) {
+                    setBanners(response.data);
+                } else {
+                    console.error('Invalid data format for banners:', response.data);
+                }
             } catch (error) {
                 console.error('Error fetching banners:', error);
                 // Fallback for demo if API fails
